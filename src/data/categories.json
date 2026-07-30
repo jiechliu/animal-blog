@@ -1,0 +1,6 @@
+[
+  { "slug": "frontend", "name": "前端手札", "description": "React、CSS 与浏览器里的细节", "color": "app-blue" },
+  { "slug": "engineering", "name": "工程拾贝", "description": "工具链、质量与团队协作", "color": "app-teal" },
+  { "slug": "design", "name": "设计观察", "description": "界面、交互与日常灵感", "color": "app-pink" },
+  { "slug": "life", "name": "岛上生活", "description": "阅读、散步与慢慢发生的事", "color": "app-yellow" }
+]

@@ -1,0 +1,11 @@
+{
+  "name": "岛民 J",
+  "avatar": "/images/avatar.png",
+  "bio": "在代码与日常之间，种下一点长期主义",
+  "intro": "前端工程师，也是持续写作的岛民。这里记录界面、工程化与那些值得反复琢磨的小事。",
+  "social": {
+    "github": "https://github.com/",
+    "twitter": "https://x.com/",
+    "email": "mailto:hello@example.com"
+  }
+}
