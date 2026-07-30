@@ -2,11 +2,18 @@ import { Card } from 'animal-island-ui';
 import { MessageCircle } from 'lucide-react';
 import Giscus from '@giscus/react';
 
+const defaultGiscusConfig = {
+  repo: 'jiechliu/animal-blog',
+  repoId: 'R_kgDOTm-vfw',
+  category: 'General',
+  categoryId: 'DIC_kwDOTm-vf84DCRp7',
+} as const;
+
 export function GiscusComments() {
-  const repo = import.meta.env.VITE_GISCUS_REPO;
-  const repoId = import.meta.env.VITE_GISCUS_REPO_ID;
-  const category = import.meta.env.VITE_GISCUS_CATEGORY ?? 'General';
-  const categoryId = import.meta.env.VITE_GISCUS_CATEGORY_ID;
+  const repo = import.meta.env.VITE_GISCUS_REPO ?? defaultGiscusConfig.repo;
+  const repoId = import.meta.env.VITE_GISCUS_REPO_ID ?? defaultGiscusConfig.repoId;
+  const category = import.meta.env.VITE_GISCUS_CATEGORY ?? defaultGiscusConfig.category;
+  const categoryId = import.meta.env.VITE_GISCUS_CATEGORY_ID ?? defaultGiscusConfig.categoryId;
 
   if (!repo || !repoId || !categoryId) {
     return (
